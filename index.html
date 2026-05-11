@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEW TAN LEATHERS | Premium Leather</title>
+    <title>NEW TAN LEATHER EXPORTS | Global Leather Excellence</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -48,11 +48,16 @@
                     },
                     animation: {
                         'shine': 'shine 3s infinite',
+                        'pulse-glow': 'pulse-glow 4s infinite',
                     },
                     keyframes: {
                         shine: {
                             '0%': { transform: 'translateX(-100%)' },
                             '100%': { transform: 'translateX(100%)' },
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { boxShadow: '0 0 0px 0px rgba(180, 83, 9, 0)' },
+                            '50%': { boxShadow: '0 0 25px 2px rgba(180, 83, 9, 0.3)' },
                         }
                     }
                 }
@@ -110,14 +115,14 @@
             <!-- Logo -->
             <div class="flex items-center gap-3 cursor-pointer group" onclick="scrollToSection('home')">
                 <div id="nav-logo-box" class="w-9 h-9 flex items-center justify-center font-playfair text-lg font-bold rounded-sm transition-colors duration-300 bg-amber-800 text-white">
-                    A
+                    N
                 </div>
                 <div class="flex flex-col">
                     <span id="nav-logo-text" class="font-playfair text-lg md:text-xl font-bold tracking-widest leading-none transition-colors duration-300 text-stone-900">
-                        New Tan Leathers
+                        NEW TAN
                     </span>
-                    <span id="nav-logo-sub" class="text-[0.6rem] tracking-[0.2em] uppercase transition-colors duration-300 text-stone-500">
-                        Premium Leather
+                    <span id="nav-logo-sub" class="text-[0.6rem] tracking-[0.2em] uppercase transition-colors duration-300 text-stone-500 font-medium">
+                        Leather Exports
                     </span>
                 </div>
             </div>
@@ -125,16 +130,12 @@
             <!-- Desktop Nav -->
             <div class="hidden lg:flex space-x-8 items-center" id="desktop-links">
                 <button onclick="scrollToSection('home')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Home</button>
-                <button onclick="scrollToSection('about')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">About</button>
-                <button onclick="scrollToSection('gallery')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Gallery</button>
-                <button onclick="scrollToSection('tannery')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Tannery</button>
-                <button onclick="scrollToSection('team')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Team</button>
-                <button onclick="scrollToSection('events')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Events</button>
+                <button onclick="scrollToSection('about')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Heritage</button>
+                <button onclick="scrollToSection('applications')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Applications</button>
+                <button onclick="scrollToSection('gallery')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Collections</button>
+                <button onclick="scrollToSection('tannery')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">The Tannery</button>
+                <button onclick="scrollToSection('team')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Leadership</button>
                 <button onclick="scrollToSection('contact')" class="nav-link text-[0.65rem] uppercase tracking-[0.15em] font-bold transition-colors duration-300 hover:text-amber-500 text-stone-800">Contact</button>
-                
-                <button id="nav-btn" onclick="scrollToSection('contact')" class="px-5 py-2 border text-[0.65rem] uppercase tracking-widest font-bold transition-all duration-300 border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white">
-                    Enquire Now
-                </button>
             </div>
 
             <!-- Mobile Menu Toggle -->
@@ -146,14 +147,13 @@
             </div>
         </div>
 
-        <!-- Mobile Nav Overlay - Compact Spacing -->
+        <!-- Mobile Nav Overlay -->
         <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-2xl flex flex-col items-center py-6 space-y-2 lg:hidden border-t border-stone-100 transition-all duration-300 origin-top scale-y-0 opacity-0 pointer-events-none z-[50]">
             <button onclick="scrollToSection('home')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">Home</button>
-            <button onclick="scrollToSection('about')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">About</button>
-            <button onclick="scrollToSection('gallery')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">Gallery</button>
+            <button onclick="scrollToSection('about')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">Heritage</button>
+            <button onclick="scrollToSection('gallery')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">Collections</button>
             <button onclick="scrollToSection('tannery')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">Tannery</button>
-            <button onclick="scrollToSection('team')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">Team</button>
-            <button onclick="scrollToSection('events')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">Events</button>
+            <button onclick="scrollToSection('team')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">Leadership</button>
             <button onclick="scrollToSection('contact')" class="text-stone-800 text-sm uppercase tracking-widest font-bold w-full py-3 hover:text-amber-700 transition-colors text-center">Contact</button>
         </div>
     </nav>
@@ -162,17 +162,17 @@
     <section id="home" class="relative h-[100dvh] flex items-center justify-center overflow-hidden bg-stone-950">
         <div id="carousel-bg-container" class="absolute inset-0">
             <div class="carousel-slide absolute inset-0 opacity-100 z-10">
-                <img src="https://images.unsplash.com/photo-1542317148-8b4bfdeaeeca?auto=format&fit=crop&w=1920&q=80" alt="Premium Leather Texture" class="carousel-img w-full h-full object-cover scale-105">
+                <img src="assets/hero-1.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=1920&q=80'" alt="Excellence in Leather" class="carousel-img w-full h-full object-cover scale-105">
                 <div class="absolute inset-0 bg-stone-950/60 mix-blend-multiply"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-transparent to-transparent"></div>
             </div>
             <div class="carousel-slide absolute inset-0 opacity-0 z-0">
-                <img src="https://images.unsplash.com/photo-1628859421683-1ce54261daeb?auto=format&fit=crop&w=1920&q=80" alt="Rolled Premium Leather" class="carousel-img w-full h-full object-cover scale-100">
+                <img src="assets/hero-2.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1920&q=80'" alt="Rolled Premium Leather" class="carousel-img w-full h-full object-cover scale-100">
                 <div class="absolute inset-0 bg-stone-950/60 mix-blend-multiply"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-transparent to-transparent"></div>
             </div>
             <div class="carousel-slide absolute inset-0 opacity-0 z-0">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80" alt="Tannery Workshop" class="carousel-img w-full h-full object-cover scale-100">
+                <img src="assets/hero-3.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=1920&q=80'" alt="Tannery Craftsmanship" class="carousel-img w-full h-full object-cover scale-100">
                 <div class="absolute inset-0 bg-stone-950/60 mix-blend-multiply"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-transparent to-transparent"></div>
             </div>
@@ -180,23 +180,22 @@
 
         <div class="relative z-20 text-center px-4 max-w-5xl mx-auto mt-20 mb-16 md:mb-0">
             <div class="text-animate text-show inline-block mb-4 md:mb-6 border-b border-amber-500 pb-2">
-                <p class="text-amber-500 tracking-[0.4em] uppercase text-[0.65rem] md:text-sm font-semibold">Established Excellence</p>
+                <p class="text-amber-500 tracking-[0.4em] uppercase text-[0.65rem] md:text-sm font-semibold">Excellence in Every Grain</p>
             </div>
             <h1 id="hero-title" class="text-animate text-show text-5xl md:text-6xl lg:text-8xl font-playfair text-white font-bold mb-4 md:mb-6 leading-tight text-shadow-lg delay-100">
-                Mastering The <br class="hidden md:block"/> Art of Leather
+                Crafting The <br class="hidden md:block"/> World's Finest
             </h1>
             <p id="hero-subtitle" class="text-animate text-show text-stone-200 text-sm md:text-xl mb-10 md:mb-12 font-light max-w-3xl mx-auto leading-relaxed px-4 md:px-0 delay-200">
-                Delivering millions of square feet of premium finished Sheep & Goat leather to the world's leading fashion houses.
+                Leading global exporters of premium finished Sheep and Goat leather, meticulously processed for international fashion and footwear.
             </p>
             <div class="text-animate text-show delay-300">
-                <button onclick="scrollToSection('about')" class="group relative inline-flex items-center justify-center bg-amber-800 text-white px-10 md:px-14 py-5 md:py-7 uppercase tracking-[0.3em] text-[0.7rem] md:text-xs font-bold transition-all duration-700 overflow-hidden shadow-2xl animate-pulse-glow hover:bg-stone-900">
+                <button onclick="scrollToSection('gallery')" class="group relative inline-flex items-center justify-center bg-amber-800 text-white px-10 md:px-14 py-5 md:py-7 uppercase tracking-[0.3em] text-[0.7rem] md:text-xs font-bold transition-all duration-700 overflow-hidden shadow-2xl animate-pulse-glow hover:bg-stone-900">
                     <span class="absolute inset-0 w-0 bg-stone-900 transition-all duration-500 ease-out group-hover:w-full"></span>
                     <span class="absolute inset-0 w-1/4 h-full bg-white/10 skew-x-[45deg] animate-shine pointer-events-none z-10"></span>
                     <span class="relative z-20 flex items-center gap-4">
-                        Explore Our Heritage 
+                        View Collections 
                         <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300"></i>
                     </span>
-                    <!-- Corner Accents -->
                     <span class="btn-corner absolute top-0 left-0 w-0 h-[2px] bg-amber-500 group-hover:w-8"></span>
                     <span class="btn-corner absolute top-0 left-0 w-[2px] h-0 bg-amber-500 group-hover:h-8"></span>
                 </button>
@@ -220,40 +219,40 @@
         </div>
     </section>
 
-    <!-- --- ABOUT --- -->
+    <!-- --- ABOUT / HERITAGE --- -->
     <section id="about" class="py-20 md:py-32 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                 <div class="relative order-2 lg:order-1 reveal-on-scroll">
                     <div class="relative z-10 right-0 lg:-right-8 top-0 lg:-top-8">
-                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="Leather Crafting Tools" class="w-full h-auto object-cover rounded-sm shadow-2xl" />
+                        <img src="assets/heritage.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1000&q=80'" alt="Leather Heritage" class="w-full h-auto object-cover rounded-sm shadow-2xl" />
                     </div>
                     <div class="absolute -bottom-8 -left-8 lg:-bottom-16 lg:-left-16 w-3/4 bg-stone-100 p-8 md:p-12 z-20 rounded-sm shadow-xl border-l-4 border-amber-800 hidden md:block">
                         <span class="text-6xl font-playfair text-amber-200 absolute -top-4 -left-2 leading-none opacity-50">"</span>
                         <blockquote class="relative z-10 text-xl lg:text-2xl font-playfair italic text-stone-800 mb-4 leading-snug">
-                            Those who do not want to imitate anything, produce nothing.
+                            Excellence is not a skill, it's an attitude.
                         </blockquote>
-                        <p class="uppercase tracking-widest text-xs text-amber-800 font-bold">— Salvador Dalí</p>
+                        <p class="uppercase tracking-widest text-xs text-amber-800 font-bold">— New Tan Philosophy</p>
                     </div>
                 </div>
                 <div class="order-1 lg:order-2 reveal-on-scroll" style="transition-delay: 200ms;">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="h-px w-12 bg-amber-800"></div>
-                        <span class="uppercase tracking-[0.2em] text-amber-800 text-xs font-bold">About Us</span>
+                        <span class="uppercase tracking-[0.2em] text-amber-800 text-xs font-bold">Our Heritage</span>
                     </div>
-                    <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-stone-900 mb-8 leading-tight">A Legacy of <br/> Premium Craftsmanship</h2>
-                    <div class="text-stone-600 font-light leading-relaxed space-y-6">
-                        <p>New Tan Leathers is a front-line manufacturer and exporter of premium finished leather of Sheep & Goat leather for shoes and Garments industries.</p>
-                        <p>Run by a group of professionals who share a vision of progress, we are dedicated to manufacturing products that define quality in the leather industry.</p>
+                    <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-stone-900 mb-8 leading-tight">A Vision for <br/> Leather Perfection</h2>
+                    <div class="text-stone-600 font-light leading-relaxed space-y-6 text-lg">
+                        <p>New Tan Leather Exports is a premier manufacturer and global exporter based in the heart of India’s leather hub. Founded on principles of quality, transparency, and innovation.</p>
+                        <p>We specialize in transforming raw skins into exquisite finished leather. Our team of master tanners combines traditional craftsmanship with modern technology to deliver products that meet rigorous international luxury standards.</p>
                     </div>
                     <div class="grid grid-cols-2 gap-8 pt-10 border-t border-stone-200 mt-10">
                         <div>
-                            <h3 class="text-4xl font-playfair font-bold text-amber-800">5-6M</h3>
-                            <p class="text-[0.65rem] uppercase tracking-widest text-stone-500 font-bold">Sq Ft Per Annum</p>
+                            <h3 class="text-4xl font-playfair font-bold text-amber-800">1.5 - 3</h3>
+                            <p class="text-[0.65rem] uppercase tracking-widest text-stone-500 font-bold">Lacs Sq Ft / Month</p>
                         </div>
                         <div>
-                            <h3 class="text-4xl font-playfair font-bold text-amber-800">Global</h3>
-                            <p class="text-[0.65rem] uppercase tracking-widest text-stone-500 font-bold">Export Reach</p>
+                            <h3 class="text-4xl font-playfair font-bold text-amber-800">15+</h3>
+                            <p class="text-[0.65rem] uppercase tracking-widest text-stone-500 font-bold">Global Destinations</p>
                         </div>
                     </div>
                 </div>
@@ -261,22 +260,111 @@
         </div>
     </section>
 
-    <!-- --- GALLERY --- -->
+    <!-- --- CRAFTED FOR (formerly Applications) --- -->
+    <section id="applications" class="py-20 md:py-32 bg-stone-50 overflow-hidden border-t border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal-on-scroll">
+                <span class="uppercase tracking-[0.2em] text-amber-800 text-xs font-bold block mb-4">Where Our Leather Lives</span>
+                <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-stone-900 mb-6">Crafted For Every Detail</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto font-light px-4">From haute couture runways to handcrafted footwear, our leathers shape the products that define modern luxury.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Garment -->
+                <div class="group relative overflow-hidden rounded-sm reveal-on-scroll">
+                    <div class="relative overflow-hidden aspect-[3/4]">
+                        <img src="assets/app-garment.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=900&q=80'" alt="Garment Leather" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-amber-800/90 backdrop-blur-sm flex items-center justify-center rounded-full">
+                            <i data-lucide="shirt" class="text-white w-5 h-5"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h4 class="text-xl font-playfair font-bold text-white mb-3">Fashion & Garment</h4>
+                            <ul class="text-stone-200 text-xs space-y-1.5 font-light">
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Supple Drape</li>
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Vivid Dye Uptake</li>
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Couture-Grade Finish</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shoe Upper -->
+                <div class="group relative overflow-hidden rounded-sm reveal-on-scroll" style="transition-delay: 150ms;">
+                    <div class="relative overflow-hidden aspect-[3/4]">
+                        <img src="assets/app-shoe.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?auto=format&fit=crop&w=900&q=80'" alt="Shoe Upper Leather" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-amber-800/90 backdrop-blur-sm flex items-center justify-center rounded-full">
+                            <i data-lucide="footprints" class="text-white w-5 h-5"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h4 class="text-xl font-playfair font-bold text-white mb-3">Footwear & Soles</h4>
+                            <ul class="text-stone-200 text-xs space-y-1.5 font-light">
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>High Tensile Strength</li>
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Uniform Grain</li>
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Consistent Substance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bags & Accessories -->
+                <div class="group relative overflow-hidden rounded-sm reveal-on-scroll" style="transition-delay: 300ms;">
+                    <div class="relative overflow-hidden aspect-[3/4]">
+                        <img src="assets/app-bag.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80'" alt="Bags & Accessories" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-amber-800/90 backdrop-blur-sm flex items-center justify-center rounded-full">
+                            <i data-lucide="shopping-bag" class="text-white w-5 h-5"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h4 class="text-xl font-playfair font-bold text-white mb-3">Bags & Accessories</h4>
+                            <ul class="text-stone-200 text-xs space-y-1.5 font-light">
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Sculptural Body</li>
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Edge-Paint Ready</li>
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Develops Patina</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upholstery -->
+                <div class="group relative overflow-hidden rounded-sm reveal-on-scroll" style="transition-delay: 450ms;">
+                    <div class="relative overflow-hidden aspect-[3/4]">
+                        <img src="assets/app-upholstery.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80'" alt="Upholstery & Interiors" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-amber-800/90 backdrop-blur-sm flex items-center justify-center rounded-full">
+                            <i data-lucide="armchair" class="text-white w-5 h-5"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h4 class="text-xl font-playfair font-bold text-white mb-3">Upholstery & Interiors</h4>
+                            <ul class="text-stone-200 text-xs space-y-1.5 font-light">
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Abrasion Resistant</li>
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Wide-Panel Hides</li>
+                                <li class="flex items-center gap-2"><div class="w-1 h-1 bg-amber-500 rounded-full"></div>Long-Wear Finish</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- COLLECTIONS / GALLERY --- -->
     <section id="gallery" class="py-20 md:py-32 bg-stone-100 overflow-hidden">
         <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal-on-scroll">
-                <span class="uppercase tracking-[0.2em] text-amber-800 text-xs font-bold block mb-4">Our Portfolio</span>
-                <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-stone-900 mb-6">Products & Facilities</h2>
-                <p class="text-stone-600 max-w-2xl mx-auto font-light px-4">Discover our diverse range of premium leathers and state-of-the-art manufacturing processes.</p>
+                <span class="uppercase tracking-[0.2em] text-amber-800 text-xs font-bold block mb-4">The Collections</span>
+                <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-stone-900 mb-6">Premium Portfolio</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto font-light px-4">From refined Nappa to durable Wet Blue, we provide leather solutions across all stages of production.</p>
             </div>
             <div class="flex flex-wrap justify-center gap-3 mb-12 reveal-on-scroll" style="transition-delay: 100ms;">
                 <button onclick="filterGallery('All')" class="filter-btn active bg-stone-900 text-white shadow-md px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-300 rounded-full" data-filter="All">All</button>
-                <button onclick="filterGallery('Wet Section')" class="filter-btn bg-white text-stone-600 hover:bg-stone-200 px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-300 rounded-full" data-filter="Wet Section">Wet Section</button>
-                <button onclick="filterGallery('Dry Section')" class="filter-btn bg-white text-stone-600 hover:bg-stone-200 px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-300 rounded-full" data-filter="Dry Section">Dry Section</button>
-                <button onclick="filterGallery('Leathers')" class="filter-btn bg-white text-stone-600 hover:bg-stone-200 px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-300 rounded-full" data-filter="Leathers">Leathers</button>
+                <button onclick="filterGallery('Finished')" class="filter-btn bg-white text-stone-600 hover:bg-stone-200 px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-300 rounded-full" data-filter="Finished">Finished</button>
+                <button onclick="filterGallery('Semi-Finished')" class="filter-btn bg-white text-stone-600 hover:bg-stone-200 px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-300 rounded-full" data-filter="Semi-Finished">Semi-Finished</button>
+                <button onclick="filterGallery('Specialty')" class="filter-btn bg-white text-stone-600 hover:bg-stone-200 px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-300 rounded-full" data-filter="Specialty">Specialty</button>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="gallery-grid">
-                <!-- Populated by JS -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:auto-rows-[320px]" id="gallery-grid">
+                <!-- Data populated by JS -->
             </div>
         </div>
     </section>
@@ -287,149 +375,156 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
                 <div class="lg:col-span-5 reveal-on-scroll">
                     <span class="uppercase tracking-[0.2em] text-amber-500 text-xs font-bold block mb-4">Infrastructure</span>
-                    <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-white mb-8 leading-tight">World Class <br/> Processing Unit</h2>
-                    <p class="mb-8 font-light text-stone-400 leading-relaxed text-lg">Located in Vaniyambadi, Tamil Nadu, our unit is well equipped with state-of-the-art machinery procured from the best manufacturers globally.</p>
+                    <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-white mb-8 leading-tight">Modern Machinery <br/> Skilled Workforce</h2>
+                    <p class="mb-8 font-light text-stone-400 leading-relaxed text-lg">Our facility in Tamil Nadu leverages cutting-edge Italian technology operated by master artisans to achieve a massive monthly output of 1.5 - 3 Lacs sq.ft of finished leather.</p>
                     <div class="flex items-start gap-6 bg-white/5 p-6 border-l-2 border-amber-500 rounded-r-sm backdrop-blur-sm">
-                        <i data-lucide="award" class="text-amber-500 w-10 h-10 flex-shrink-0"></i>
+                        <i data-lucide="zap" class="text-amber-500 w-10 h-10 flex-shrink-0"></i>
                         <div>
-                            <h4 class="text-white font-bold text-lg mb-1">LWG Gold Rated</h4>
-                            <p class="text-sm font-light text-stone-400 leading-relaxed">Audited by the Leather Working Group Environmental Protocol, receiving a Gold rating for environmental excellence.</p>
+                            <h4 class="text-white font-bold text-lg mb-1">High Volume Precision</h4>
+                            <p class="text-sm font-light text-stone-400 leading-relaxed">Scaling from 150,000 to 300,000 square feet monthly without compromising grain integrity.</p>
                         </div>
                     </div>
                 </div>
                 <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="bg-stone-900/50 border border-stone-800 p-10 hover:bg-stone-800 transition-colors duration-300 rounded-sm reveal-on-scroll" style="transition-delay: 200ms;">
                         <i data-lucide="droplets" class="text-amber-500 mb-6 w-10 h-10"></i>
-                        <h4 class="text-xl text-white font-playfair font-semibold mb-4">Wet Unit</h4>
-                        <p class="text-sm font-light text-stone-400 leading-relaxed">Processing Sheep & Goat Skins from beam house up to crusting with world-class facilities.</p>
+                        <h4 class="text-xl text-white font-playfair font-semibold mb-4">Wet End Unit</h4>
+                        <p class="text-sm font-light text-stone-400 leading-relaxed">Beam house up to crusting with advanced chemical balancing.</p>
                     </div>
                     <div class="bg-stone-900/50 border border-stone-800 p-10 hover:bg-stone-800 transition-colors duration-300 rounded-sm reveal-on-scroll" style="transition-delay: 400ms;">
-                        <i data-lucide="wind" class="text-amber-500 mb-6 w-10 h-10"></i>
-                        <h4 class="text-xl text-white font-playfair font-semibold mb-4">Dry Unit</h4>
-                        <p class="text-sm font-light text-stone-400 leading-relaxed">Post-tanning and finishing operations to cater to the top brands in the luxury industry.</p>
+                        <i data-lucide="scissors" class="text-amber-500 mb-6 w-10 h-10"></i>
+                        <h4 class="text-xl text-white font-playfair font-semibold mb-4">Dry End Unit</h4>
+                        <p class="text-sm font-light text-stone-400 leading-relaxed">Precision coating and buffing for European luxury standards.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- --- TEAM --- -->
-    <section id="team" class="py-20 md:py-32 bg-stone-100 overflow-hidden">
+    <!-- --- QUALITY & SUSTAINABILITY SECTION --- -->
+    <section id="sustainability" class="py-20 md:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20 reveal-on-scroll">
-                <span class="uppercase tracking-[0.2em] text-amber-800 text-xs font-bold block mb-4">The People</span>
-                <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-stone-900 mb-6">Our Leadership</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-                <div class="text-center group reveal-on-scroll" style="transition-delay: 0ms;">
-                    <div class="relative w-56 h-56 mx-auto mb-8 overflow-hidden rounded-full border-8 border-white shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1614088941019-2169bce05cc4?auto=format&fit=crop&w=500&q=80" alt="Leather Sewing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" />
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal-on-scroll">
+                    <span class="uppercase tracking-[0.2em] text-amber-800 text-xs font-bold block mb-4">The Standard</span>
+                    <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-stone-900 mb-8 leading-tight">Quality & <br/> Sustainability</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-5">
+                            <div class="w-12 h-12 flex-shrink-0 bg-stone-100 flex items-center justify-center rounded-full"><i data-lucide="check-circle" class="text-amber-800 w-6 h-6"></i></div>
+                            <div>
+                                <h5 class="font-bold text-stone-900">REACH Compliant Finishing</h5>
+                                <p class="text-stone-500 text-sm font-light">Strict adherence to European chemical safety standards for global export.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div class="w-12 h-12 flex-shrink-0 bg-stone-100 flex items-center justify-center rounded-full"><i data-lucide="palette" class="text-amber-800 w-6 h-6"></i></div>
+                            <div>
+                                <h5 class="font-bold text-stone-900">Custom Colors & Finishes</h5>
+                                <p class="text-stone-500 text-sm font-light">Bespoke R&D services to match specific brand palettes and textures.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div class="w-12 h-12 flex-shrink-0 bg-stone-100 flex items-center justify-center rounded-full"><i data-lucide="refresh-cw" class="text-amber-800 w-6 h-6"></i></div>
+                            <div>
+                                <h5 class="font-bold text-stone-900">Eco-Friendly Tanning</h5>
+                                <p class="text-stone-500 text-sm font-light">Advanced water recycling and ethical sourcing protocols at every stage.</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-playfair font-bold text-stone-900">Mohammed Omer</h3>
-                    <p class="text-amber-800 uppercase tracking-widest text-xs font-bold mb-5 mt-2">Managing Director</p>
                 </div>
-                <div class="text-center group reveal-on-scroll" style="transition-delay: 200ms;">
-                    <div class="relative w-56 h-56 mx-auto mb-8 overflow-hidden rounded-full border-8 border-white shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=500&q=80" alt="Leather Crafting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" />
+                <div class="relative reveal-on-scroll" style="transition-delay: 200ms;">
+                    <div class="bg-stone-900 p-10 md:p-16 rounded-sm text-white relative z-10">
+                        <h4 class="text-2xl font-playfair mb-6">Strict Quality Checks</h4>
+                        <p class="font-light text-stone-400 mb-8 leading-relaxed">Our quality control team performs rigorous inspections at every single stage of the process—from raw hide selection to final packing—ensuring zero-defect exports for Germany, Italy, and beyond.</p>
+                        <div class="h-px w-full bg-stone-700 mb-8"></div>
+                        <div class="flex items-center gap-4">
+                            <i data-lucide="shield-check" class="text-amber-500 w-8 h-8"></i>
+                            <span class="uppercase tracking-widest text-[0.65rem] font-bold">Guaranteed Integrity</span>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-playfair font-bold text-stone-900">Kaleemullah</h3>
-                    <p class="text-amber-800 uppercase tracking-widest text-xs font-bold mb-5 mt-2">Director</p>
-                </div>
-                <div class="text-center group reveal-on-scroll" style="transition-delay: 400ms;">
-                    <div class="relative w-56 h-56 mx-auto mb-8 overflow-hidden rounded-full border-8 border-white shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1558000143-a61250284457?auto=format&fit=crop&w=500&q=80" alt="Stacked Leather" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" />
-                    </div>
-                    <h3 class="text-2xl font-playfair font-bold text-stone-900">Muneer Ahmed</h3>
-                    <p class="text-amber-800 uppercase tracking-widest text-xs font-bold mb-5 mt-2">Senior Manager</p>
+                    <div class="absolute -top-6 -right-6 w-full h-full border border-amber-800/30 -z-0"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- --- EVENTS --- -->
-    <section id="events" class="py-20 md:py-32 bg-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center md:text-left flex flex-col md:flex-row justify-between items-end mb-16 gap-6 reveal-on-scroll">
-                <div>
-                    <span class="uppercase tracking-[0.2em] text-amber-800 text-xs font-bold block mb-4">Exhibitions</span>
-                    <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-stone-900 mb-4 leading-tight">Global Presence</h2>
-                    <p class="text-stone-600 font-light max-w-lg">Showcasing our premium collections at the world's most prestigious fairs.</p>
+    <!-- --- WHY CHOOSE US --- -->
+                <div class="group p-10 border border-stone-100 bg-stone-50/50 rounded-sm hover:bg-white hover:shadow-2xl hover:shadow-amber-900/5 transition-all duration-500 reveal-on-scroll" style="transition-delay: 150ms;">
+                    <div class="w-14 h-14 bg-amber-800/5 flex items-center justify-center rounded-full mb-8 group-hover:bg-amber-800 transition-colors duration-500">
+                        <i data-lucide="globe" class="text-amber-800 group-hover:text-white transition-colors duration-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-playfair font-bold text-stone-900 mb-4">Global Network</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed font-light font-medium italic">Germany • Italy • France • UK • Japan</p>
+                    <p class="text-stone-500 text-xs mt-2 leading-relaxed">Trusted by discerning clients across the world's most sophisticated leather markets.</p>
                 </div>
+
+                <!-- Sustainability/Compliance -->
+                <div class="group p-10 border border-stone-100 bg-stone-50/50 rounded-sm hover:bg-white hover:shadow-2xl hover:shadow-amber-900/5 transition-all duration-500 reveal-on-scroll" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 bg-amber-800/5 flex items-center justify-center rounded-full mb-8 group-hover:bg-amber-800 transition-colors duration-500">
+                        <i data-lucide="check-circle" class="text-amber-800 group-hover:text-white transition-colors duration-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-playfair font-bold text-stone-900 mb-4">Full Compliance</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed font-light">REACH compliant and LWG standard processes, ensuring your supply chain remains ethical and sustainable.</p>
+                </div>
+
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="group cursor-pointer reveal-on-scroll" style="transition-delay: 0ms;">
-                    <div class="overflow-hidden rounded-sm mb-6 h-72 shadow-md relative">
-                        <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=800&q=80" alt="Leather Swatches" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-stone-900 text-xs font-bold px-3 py-1.5 shadow-sm">2023</div>
+        </div>
+    </section>
+
+    <!-- --- LEADERSHIP --- -->
+     <section id="team" class="py-24 bg-stone-900 overflow-hidden border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal-on-scroll">
+                <span class="uppercase tracking-[0.2em] text-amber-600 text-xs font-bold block mb-4">Board of Directors</span>
+                <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-white mb-6">Executive Leadership</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="p-12 bg-stone-950 border border-stone-800 text-center hover:border-amber-800 transition-all duration-500 group reveal-on-scroll">
+                    <div class="w-24 h-24 rounded-full border-2 border-amber-800/30 flex items-center justify-center mx-auto mb-8 group-hover:bg-amber-800 transition-all duration-500">
+                        <span class="text-3xl font-playfair font-bold text-amber-500 group-hover:text-white">MK</span>
                     </div>
-                    <div class="pr-4">
-                        <p class="text-amber-700 text-xs uppercase tracking-[0.2em] mb-2 font-semibold">MILAN, ITALY</p>
-                        <h3 class="font-playfair font-bold text-xl text-stone-900 group-hover:text-amber-800 transition-colors">LINEA PELLE FAIR</h3>
-                    </div>
+                    <h3 class="text-2xl font-playfair font-bold text-white mb-2">Mohammed Kashif</h3>
+                    <p class="text-amber-700 uppercase tracking-widest text-[0.65rem] font-bold">Managing Director</p>
                 </div>
-                <div class="group cursor-pointer reveal-on-scroll" style="transition-delay: 200ms;">
-                    <div class="overflow-hidden rounded-sm mb-6 h-72 shadow-md relative">
-                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80" alt="Leather Grain" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-stone-900 text-xs font-bold px-3 py-1.5 shadow-sm">2023</div>
+                <div class="p-12 bg-stone-950 border border-stone-800 text-center hover:border-amber-800 transition-all duration-500 group reveal-on-scroll" style="transition-delay: 200ms;">
+                    <div class="w-24 h-24 rounded-full border-2 border-amber-800/30 flex items-center justify-center mx-auto mb-8 group-hover:bg-amber-800 transition-all duration-500">
+                        <span class="text-3xl font-playfair font-bold text-amber-500 group-hover:text-white">MA</span>
                     </div>
-                    <div class="pr-4">
-                        <p class="text-amber-700 text-xs uppercase tracking-[0.2em] mb-2 font-semibold">HONG KONG</p>
-                        <h3 class="font-playfair font-bold text-xl text-stone-900 group-hover:text-amber-800 transition-colors">APLF LEATHER FAIR</h3>
-                    </div>
-                </div>
-                <div class="group cursor-pointer reveal-on-scroll" style="transition-delay: 400ms;">
-                    <div class="overflow-hidden rounded-sm mb-6 h-72 shadow-md relative">
-                        <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&w=800&q=80" alt="Leather Factory" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-stone-900 text-xs font-bold px-3 py-1.5 shadow-sm">2022</div>
-                    </div>
-                    <div class="pr-4">
-                        <p class="text-amber-700 text-xs uppercase tracking-[0.2em] mb-2 font-semibold">SOUTH KOREA</p>
-                        <h3 class="font-playfair font-bold text-xl text-stone-900 group-hover:text-amber-800 transition-colors">BUSAN FAIR</h3>
-                    </div>
+                    <h3 class="text-2xl font-playfair font-bold text-white mb-2">Mohamed Afnan</h3>
+                    <p class="text-amber-700 uppercase tracking-widest text-[0.65rem] font-bold">General Manager</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- --- CONTACT --- -->
-    <section id="contact" class="bg-stone-950 text-stone-300 border-t border-stone-800">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-            <div class="p-8 md:p-16 lg:p-24 bg-stone-900/50 reveal-on-scroll">
-                <span class="uppercase tracking-[0.2em] text-amber-600 text-xs font-bold block mb-4">Connect</span>
-                <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-white mb-8">Get In Touch</h2>
-                <div class="space-y-10">
-                    <div class="flex items-start gap-6 group">
-                        <div class="w-12 h-12 bg-stone-800 rounded-full flex items-center justify-center group-hover:bg-amber-800 transition-colors flex-shrink-0">
-                            <i data-lucide="map-pin" class="text-amber-500 group-hover:text-white transition-colors w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-2">Corporate Office & Tannery</h4>
-                            <p class="text-sm leading-relaxed text-stone-400 font-light">#159-A, Cutchery Road Extension, India.</p>
-                        </div>
+    <section id="contact" class="bg-stone-950 text-stone-300 border-t border-stone-800 py-20 md:py-32">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-on-scroll">
+            <span class="uppercase tracking-[0.2em] text-amber-600 text-xs font-bold block mb-4">Connect</span>
+            <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-white mb-16">Get In Touch</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+                <!-- Location -->
+                <div class="flex items-start gap-6 group">
+                    <div class="w-12 h-12 bg-stone-800 rounded-full flex items-center justify-center group-hover:bg-amber-800 transition-colors flex-shrink-0">
+                        <i data-lucide="map-pin" class="text-amber-500 group-hover:text-white transition-colors w-5 h-5"></i>
                     </div>
-                    <div class="flex items-start gap-6 group">
-                        <div class="w-12 h-12 bg-stone-800 rounded-full flex items-center justify-center group-hover:bg-amber-800 transition-colors flex-shrink-0">
-                            <i data-lucide="mail" class="text-amber-500 group-hover:text-white transition-colors w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-2">Email Us</h4>
-                            <p class="text-sm text-stone-400 font-light underline decoration-amber-700 underline-offset-4">mail@KASHIFtan.com</p>
-                        </div>
+                    <div>
+                        <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-2 font-montserrat">Corporate Office & Tannery</h4>
+                        <p class="text-sm leading-relaxed text-stone-400 font-light">Vaniyambadi / Chennai, Tamil Nadu, India.</p>
                     </div>
                 </div>
-            </div>
-            <div class="p-8 md:p-16 lg:p-24 bg-stone-950 flex flex-col justify-center reveal-on-scroll">
-                <h3 class="text-3xl font-playfair text-white mb-8">Send an Enquiry</h3>
-                <form class="space-y-6" onsubmit="event.preventDefault();">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <input type="text" placeholder="Your Name" class="bg-stone-900 border border-stone-800 text-white px-6 py-4 w-full focus:outline-none focus:border-amber-600 transition-colors font-light text-sm" />
-                        <input type="email" placeholder="Email Address" class="bg-stone-900 border border-stone-800 text-white px-6 py-4 w-full focus:outline-none focus:border-amber-600 transition-colors font-light text-sm" />
+
+                <!-- Email -->
+                <div class="flex items-start gap-6 group">
+                    <div class="w-12 h-12 bg-stone-800 rounded-full flex items-center justify-center group-hover:bg-amber-800 transition-colors flex-shrink-0">
+                        <i data-lucide="mail" class="text-amber-500 group-hover:text-white transition-colors w-5 h-5"></i>
                     </div>
-                    <textarea rows="5" placeholder="Your Message" class="bg-stone-900 border border-stone-800 text-white px-6 py-4 w-full focus:outline-none focus:border-amber-600 transition-colors font-light text-sm resize-none"></textarea>
-                    <button type="submit" class="bg-amber-800 hover:bg-amber-700 text-white px-10 py-5 uppercase tracking-[0.2em] font-bold text-xs transition-all shadow-xl hover:-translate-y-1">
-                        Submit Enquiry
-                    </button>
-                </form>
+                    <div>
+                        <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-2 font-montserrat">Email Us</h4>
+                        <p class="text-sm text-stone-400 font-light underline decoration-amber-700 underline-offset-4">info@newtanleather.com</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -438,13 +533,13 @@
     <footer class="bg-black py-10 border-t border-stone-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-2">
-                <div class="w-8 h-8 flex items-center justify-center font-playfair text-lg font-bold bg-white text-black rounded-sm">A</div>
-                <span class="font-playfair text-lg font-bold tracking-widest text-white">New Tan Leathers</span>
+                <div class="w-8 h-8 flex items-center justify-center font-playfair text-lg font-bold bg-white text-black rounded-sm">N</div>
+                <span class="font-playfair text-lg font-bold tracking-widest text-white">NEW TAN LEATHER</span>
             </div>
-            <p class="text-stone-500 text-xs uppercase tracking-widest font-light text-center">&copy; <span id="year"></span> New Tan Leathers | All rights reserved.</p>
+            <p class="text-stone-500 text-xs uppercase tracking-widest font-light text-center">&copy; <span id="year"></span> NEW TAN LEATHER EXPORTS | All rights reserved.</p>
             <div class="flex gap-6 text-stone-500">
                 <a href="#" class="hover:text-amber-500 transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                <a href="#" class="hover:text-amber-500 transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-amber-500 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
             </div>
         </div>
     </footer>
@@ -454,25 +549,25 @@
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // --- DATA ---
         const HERO_SLIDES = [
-            { title: "Mastering The \n Art of Leather", subtitle: "Delivering millions of square feet of premium finished Sheep & Goat leather." },
-            { title: "Precision in \n Every Process", subtitle: "State-of-the-art tannery facilities ensuring unmatched quality." },
-            { title: "Sustainable \n Luxury Craft", subtitle: "LWG Gold Rated facility committed to environmental harmony." }
+            { title: "Crafting The \n World's Finest", subtitle: "Leading global exporters of premium finished Sheep and Goat leather." },
+            { title: "Precision in \n Every Process", subtitle: "Modern tannery facilities delivering 5 million sq ft per annum." },
+            { title: "Global Footprint \n Luxury Standards", subtitle: "Meeting the rigorous demands of the world's finest fashion brands." }
         ];
 
+        const FALLBACK_IMG = 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=80';
         const GALLERY = [
-            { id: 1, title: 'Wet & Dry Drum', category: 'Wet Section', img: 'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&w=800&q=80' },
-            { id: 2, title: 'Wet Blue Stock', category: 'Wet Section', img: 'https://images.unsplash.com/photo-1558000143-a61250284457?auto=format&fit=crop&w=800&q=80' },
-            { id: 3, title: 'Plating & Measuring', category: 'Dry Section', img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80' },
-            { id: 4, title: 'Buffing Section', category: 'Dry Section', img: 'https://images.unsplash.com/photo-1617325247661-675003099951?auto=format&fit=crop&w=800&q=80' },
-            { id: 5, title: 'Sheep Leathers', category: 'Leathers', img: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80' },
-            { id: 6, title: 'Veg Tanned Leathers', category: 'Leathers', img: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80' },
-            { id: 7, title: 'Eco-Friendly Leathers', category: 'Leathers', img: 'https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=800&q=80' },
-            { id: 8, title: 'Leather for Shoes', category: 'Leathers', img: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80' },
+            { id: 1, title: 'Finished Nappa',     category: 'Finished',      desc: 'Ultra-soft, full-grain surface with exceptional dye uptake, ideal for premium garments and luxury accessories.', img: 'assets/gallery-1.jpg', fb: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=80' },
+            { id: 2, title: 'Suede & Nubuck',    category: 'Finished',      desc: 'Velvety buffed finish delivering a rich tactile experience for luxury footwear and fashion items.',           img: 'assets/gallery-2.jpg', fb: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80' },
+            { id: 3, title: 'Wet Blue Goat',     category: 'Semi-Finished', desc: 'Chrome-tanned intermediate hides retaining full flexibility, ready for specialized finishing processes.',     img: 'assets/gallery-3.jpg', fb: 'https://images.unsplash.com/photo-1601370690183-1c7796ecec48?auto=format&fit=crop&w=900&q=80' },
+            { id: 4, title: 'Pickled Hides',     category: 'Semi-Finished', desc: 'Acid-salt preserved skins offering maximum flexibility for customized tanning and dyeing routes.',           img: 'assets/gallery-4.jpg', fb: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=900&q=80' },
+            { id: 5, title: 'Sheep Garment Skin',category: 'Specialty',     desc: 'Premium sheep skins with a supple, lightweight drape perfect for designer outerwear collections.',           img: 'assets/gallery-5.jpg', fb: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=900&q=80' },
+            { id: 6, title: 'Veg Tanned Hides',  category: 'Specialty',     desc: 'Naturally tanned with plant extracts, developing a distinctive rich patina with age and use.',                img: 'assets/gallery-6.jpg', fb: 'https://images.unsplash.com/photo-1531835551805-466dee64dec1?auto=format&fit=crop&w=900&q=80' },
+            { id: 7, title: 'Lining Leather',    category: 'Finished',      desc: 'Breathable, ultra-thin leather ensuring superior comfort and longevity in shoe interiors.',                   img: 'assets/gallery-7.jpg', fb: 'https://images.unsplash.com/photo-1597633244018-0201d0158aab?auto=format&fit=crop&w=900&q=80' },
+            { id: 8, title: 'Crust Leather',     category: 'Semi-Finished', desc: 'Dried and set hides ready for custom coloring and surface finishing to precise specifications.',             img: 'assets/gallery-8.jpg', fb: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80' },
         ];
 
-        // --- NAVIGATION & MENU ---
+        // Navbar & Scroll logic
         const navbar = document.getElementById('navbar');
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -504,11 +599,7 @@
                 const headerOffset = 80;
                 const elementPosition = element.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
             }
         }
 
@@ -524,7 +615,7 @@
             }
         });
 
-        // --- CAROUSEL ---
+        // Carousel logic
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-slide');
         const dots = document.querySelectorAll('.carousel-dot');
@@ -538,7 +629,7 @@
                 slide.querySelector('img').className = i === index ? "carousel-img w-full h-full object-cover scale-105" : "carousel-img w-full h-full object-cover scale-100";
             });
             dots.forEach((dot, i) => {
-                dot.className = i === index ? "carousel-dot w-8 h-2.5 rounded-full bg-amber-500 transition-all duration-300" : "carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300";
+                dot.className = i === index ? "carousel-dot w-8 h-2.5 rounded-full bg-amber-500 transition-all duration-300" : "carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all duration-300";
             });
         }
 
@@ -558,29 +649,48 @@
         function goToSlide(index) { if(index !== currentSlide) changeSlide(index); }
         setInterval(nextSlide, 6000);
 
-        // --- GALLERY ---
+        // Gallery Filter
         const galleryGrid = document.getElementById('gallery-grid');
         function renderGallery(items) {
             galleryGrid.innerHTML = items.map((item, index) => `
-                <div class="group relative h-96 overflow-hidden rounded-sm shadow-sm cursor-pointer bg-stone-200 reveal-on-scroll" style="transition-delay: ${index * 100}ms">
-                    <img src="${item.img}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-900/30 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
-                    <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                        <p class="text-amber-400 text-[0.6rem] uppercase tracking-widest mb-2 font-bold">${item.category}</p>
-                        <h3 class="text-white font-playfair text-2xl font-medium">${item.title}</h3>
+                <div class="group relative overflow-hidden rounded-sm shadow-lg cursor-pointer bg-stone-800 reveal-on-scroll ${index === 0 ? 'sm:col-span-2 lg:col-span-1 h-72 sm:h-96 lg:row-span-2 lg:h-auto' : 'h-72 lg:h-auto'}" style="transition-delay: ${index * 80}ms">
+                    <img src="${item.img}" onerror="this.onerror=null;this.src='${item.fb || FALLBACK_IMG}'" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/50 to-stone-800/10 opacity-75 group-hover:opacity-95 transition-opacity duration-500"></div>
+                    <!-- Top category badge -->
+                    <div class="absolute top-4 left-4 transform -translate-y-1 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                        <span class="bg-amber-800 text-white text-[0.5rem] uppercase tracking-[0.18em] px-3 py-1.5 font-bold shadow-lg">${item.category}</span>
                     </div>
+                    <!-- Bottom content -->
+                    <div class="absolute bottom-0 left-0 right-0 p-6 ${index === 0 ? 'lg:p-8' : ''} transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="h-px w-5 bg-amber-500"></div>
+                            <p class="text-amber-400 text-[0.55rem] uppercase tracking-[0.2em] font-bold">${item.category}</p>
+                        </div>
+                        <h3 class="text-white font-playfair ${index === 0 ? 'text-2xl lg:text-3xl' : 'text-xl'} font-semibold leading-snug mb-2">${item.title}</h3>
+                        <p class="text-stone-300 text-xs font-light leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75 line-clamp-2 max-w-xs">${item.desc}</p>
+                        <div class="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 transform translate-y-1 group-hover:translate-y-0">
+                            <span class="inline-flex items-center gap-2 text-amber-400 text-[0.6rem] uppercase tracking-widest font-bold border-b border-amber-500/50 pb-0.5">
+                                Explore
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Amber border highlight on hover -->
+                    <div class="absolute inset-0 border-2 border-transparent group-hover:border-amber-700/50 transition-all duration-500 pointer-events-none rounded-sm"></div>
                 </div>`).join('');
             observeElements();
         }
+
         function filterGallery(category) {
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.className = btn.dataset.filter === category ? "filter-btn active bg-stone-900 text-white shadow-md px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-300 rounded-full" : "filter-btn bg-white text-stone-600 hover:bg-stone-200 px-6 py-2.5 uppercase tracking-widest text-xs font-medium transition-all duration-300 rounded-full";
             });
             renderGallery(category === 'All' ? GALLERY : GALLERY.filter(item => item.category === category));
         }
+
         renderGallery(GALLERY);
 
-        // --- SCROLL REVEAL ---
         function observeElements() {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); });
